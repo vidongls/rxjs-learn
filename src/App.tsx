@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Input from "./Input";
+import List from "./List";
+
+const App: React.FC = () => {
+	return (
+		<div className="w-screen h-screen p-6 flex justify-center">
+			<div className="text-center flex flex-col">
+				<h1 className="text-3xl font-medium text-green-600 mb-3">Todo List</h1>
+
+				<Input />
+
+				<List />
+			</div>
+		</div>
+	);
+};
 
 export default App;
+
